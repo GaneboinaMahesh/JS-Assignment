@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS print current window</title>
+    </head>
+    <dody>
+        <h2>Print Current Page</h2>
+
+        
+        <button type="button" onclick=myFunction()>Print</button>
+        <br />
+
+        <script type="text/javascript">
+            var dateObject = new Date();
+           
+            document.write(dateObject.getTime());
+            document.write("<br />");
+
+            document.write(dateObject.toString());
+            document.write("<br />");
+
+            document.write(dateObject.toUTCString());
+            document.write("<br />");
+
+            document.write(dateObject.toDateString());
+            document.write("<br />");
+
+            document.write(dateObject.toTimeString());
+            document.write("<br />");
+
+            document.write(dateObject.toLocaleDateString());
+            document.write("<br />");
+
+            document.write(dateObject.toLocaleTimeString());
+            document.write("<br />");
+
+            function myFunction()
+            {
+                document.write(window.print());
+            }
+            
+
+        </script>
