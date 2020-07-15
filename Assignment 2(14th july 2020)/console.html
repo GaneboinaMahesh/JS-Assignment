@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Console.log methods</h2>
+    <script type="text/javascript">
+
+        //console.log method()
+        console.log("Hello Javascript");
+        console.log('Hello Letsupgrade!');
+        console.log(100);
+        console.log(true);
+        console.log(null);
+        console.log(undefined);
+        console.log(["Apple","Banana","Mango"]);
+        console.log({x:1, y:2, z:3});
+
+
+        //Console.warn method(): Used to log warning message to the console. By default the warning message will be highlighted with yellow color.
+       
+        console.warn("This is a warning");
+
+        //console.error method(): Used to log error message to the console.
+        
+        console.log("This is a error Message");
+
+        //console.clear  method()
+        console.clear();
+
+        //console.time() and console.timeEnd()
+
+        console.time();
+        console.log("Hello Javascript");
+        console.log('Hello Letsupgrade!');
+        console.log(100);
+        console.timeEnd();
+
+        //console.table method(): This method allows us to create atable in the console.
+        console.log({a:1, b:2, c:3, d:4});
+        console.table({a:1, b:2, c:3, d:4});
+
+        //console.count method()
+
+        for(let i=0; i<5; i++){
+            console.count(i);
+        }
+
+        //console.group() and console.groupEnd() methods:
+
+        console.group();
+        console.warn("This is a warning");
+        console.error("This is a error");
+        console.log("Hello Javascript");
+        console.groupEnd();
+        console.log("New Section");
+
+        //console.info
+        console.info("Received info");
+
+    </script>
+</body>
+</html>

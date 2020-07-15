@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Variables, Constants & Let keywords</h2>
+    <p><b><u>Variable:</u></b> Variable is a named memory location, whose value may change during the execution of a program.</p>
+    <p><b><u>Conatant:</u></b> Constant is also a named memory location, whose value never changes during the execution of a program.</p>
+    <p><b>Note:</b> Constants stay constant whereas variables vary.</p>
+    <script type="text/javascript">
+
+    //======Variable======
+    var playerScore;   //Here we are declaring the variable.
+    playerScore = 100;  //Here we are initializing the variable.
+    document.write("The player score is = ", playerScore, "<br />");
+    var player2Score = 70;  //Here we are declaring and initializing the variable.
+    document.write("The player2 score is = ", player2Score, "<br />");
+    
+    document.write("The player2 score is = ", player2Score=85, "<br />"); ////palyer2Score = 85; Now the palyer2 score is changed at the time of execution.
+    
+    //Delacring Multiple Variables
+    var num1, num2, num3;
+    num1 = 10;
+    num2 = 20;
+    num3 = num1 + num2;
+    document.write("The sum of num1 and num2 is : ", num3, "<br />");
+
+    var a = 5, b = 6, c = a + b; //Here we are declaring and initializing multiple variables at the same time.
+    document.write("The sum of a & b is : ", c, "<br />");
+    
+    //=======Constant======
+    const PI = 3.142; // We have to initialize the constant at time of declaring it, else it leads to an error.
+    document.write("The Value of Pi is : ", PI, "<br />");
+    
+    //Declaring Multiple constants
+    const BOX_LENGTH = 10, BOX_HEIGHT = 5;
+    document.write("The Value of Box length is = ", BOX_LENGTH, "<br />");
+    document.write("The Value of Box height is = ", BOX_HEIGHT, "<br />");
+
+    //======Let======
+    var  x = 10;  // Here x is 10
+    
+    {  
+    let x = 2;    // Here x is 2
+        document.write("The Value of x inside the block = ", x, "<br />")
+    }
+    document.write("The value of x outside the block = ", x, "<br />");
+    </script>
+</body>
+</html>
